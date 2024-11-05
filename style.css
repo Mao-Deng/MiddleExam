@@ -73,43 +73,65 @@ section {
     color: #666;
 }
 
-/* 專業與技能區域動畫 */
-.skills-list {
+/* 專業與技能樣式 */
+#skills {
+    text-align: center;
+    padding: 20px;
+}
+
+#skills h2 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+#skills ul {
     list-style-type: none;
     padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+#skills ul li {
+    font-size: 18px;
+    color: #555;
+    text-align: center;
+    width: 120px;
+    line-height: 1.6;
+    padding: 10px;
+    border-radius: 8px;
+    transition: border 0.3s, box-shadow 0.3s;
+}
+
+#skills ul li:hover {
+    border: 2px solid #0073e6;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#skills ul li img.skill-icon {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-bottom: 8px;
+    object-fit: cover;
+}
+
+#skills ul li strong {
+    display: block;
+    color: #0073e6;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+#skills ul li p {
+    font-size: 14px;
+    color: #777;
     margin: 0;
 }
 
-.skills-list li {
-    background-color: #f4f4f9;
-    padding: 10px;
-    margin: 10px 0;
-    border-radius: 5px;
-    font-weight: bold;
-    color: #333;
-    opacity: 0;
-    transform: translateY(20px);
-    animation: fadeInUp 0.5s ease forwards;
-}
 
-.skills-list li:nth-child(1) {
-    animation-delay: 0.2s;
-}
-
-.skills-list li:nth-child(2) {
-    animation-delay: 0.4s;
-}
-
-.skills-list li:nth-child(3) {
-    animation-delay: 0.6s;
-}
-
-@keyframes fadeInUp {
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
 
 /* 美化音樂控制按鈕 */
 #music-control {
