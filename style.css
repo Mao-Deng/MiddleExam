@@ -5,6 +5,43 @@
     box-sizing: border-box;
 }
 
+/* 導覽欄樣式 */
+nav {
+    background-color: #333;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 10px 0;
+    z-index: 1000;
+}
+
+nav ul {
+    list-style-type: none;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    color: #ffd700;
+}
+
+/* 為了讓內容不被導覽欄遮住 */
+body {
+    margin-top: 50px;
+}
+
 body {
     font-family: Arial, sans-serif;
     color: #333;

@@ -7,6 +7,17 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    
+    <!-- 導覽欄 -->
+    <nav>
+        <ul>
+            <li><a href="#basic-info">基本資訊</a></li>
+            <li><a href="#skills">專業與技能</a></li>
+            <li><a href="#experience">個人經歷</a></li>
+            <li><a href="#videos">影片展示</a></li>
+            <li><a href="#contact">聯絡資訊</a></li>
+        </ul>
+    </nav>
 
     <!-- 個人基本資訊 -->
     <section id="basic-info">
@@ -56,6 +67,10 @@
             <p>穿越溪流，攜心相印影片</p>
         </div>
     </section>
+    <!-- 音樂播放 -->
+    <audio id="background-music" src="music/Baseballmusic.mp3" autoplay loop>
+        您的瀏覽器不支援音樂播放。
+    </audio>
     <!-- 聯絡資訊 -->
     <section id="contact">
         <h2>聯絡資訊</h2>
@@ -66,6 +81,25 @@
             <li><a href="mailto:asakura0984311953@gmail.com">Email</a></li>
         </ul>
     </section>
+    <!-- 音樂按鈕 -->
+    <section id="music-control">
+        <button onclick="toggleMusic()" id="music-button">暫停音樂</button>
+    </section>
+
+    <!-- JavaScript -->
+    <script>
+        function toggleMusic() {
+            const music = document.getElementById("background-music");
+            const button = document.getElementById("music-button");
+            if (music.paused) {
+                music.play();
+                button.textContent = "暫停音樂";
+            } else {
+                music.pause();
+                button.textContent = "播放音樂";
+            }
+        }
+    </script>
 
 </body>
 </html>
