@@ -172,13 +172,21 @@ section {
 }
 
 #contact ul li {
-    display: inline;
+    display: inline-block;
     margin: 0 10px;
+}
+
+#contact ul li img {
+    width: 30px;
+    height: auto;
+    vertical-align: middle;
 }
 
 #contact ul li a {
     text-decoration: none;
     color: #0073e6;
+    display: inline-flex;
+    align-items: center;
 }
 
 /* 影片區塊樣式 */
