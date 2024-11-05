@@ -40,6 +40,167 @@ nav ul li a:hover {
 /* 為了讓內容不被導覽欄遮住 */
 body {
     margin-top: 50px;
+    font-family: Arial, sans-serif;
+    color: #333;
+    background-color: #f4f4f9;
+}
+
+h1, h2 {
+    text-align: center;
+    color: #333;
+}
+
+section {
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 800px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.profile-photo {
+    display: block;
+    margin: 0 auto;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+
+.tagline {
+    text-align: center;
+    font-style: italic;
+    color: #666;
+}
+
+/* 專業與技能區域動畫 */
+.skills-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.skills-list li {
+    background-color: #f4f4f9;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    font-weight: bold;
+    color: #333;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 0.5s ease forwards;
+}
+
+.skills-list li:nth-child(1) {
+    animation-delay: 0.2s;
+}
+
+.skills-list li:nth-child(2) {
+    animation-delay: 0.4s;
+}
+
+.skills-list li:nth-child(3) {
+    animation-delay: 0.6s;
+}
+
+@keyframes fadeInUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* 美化音樂控制按鈕 */
+#music-control {
+    text-align: center;
+    margin: 20px;
+}
+
+#music-button {
+    background-color: #0073e6;
+    color: #fff;
+    font-size: 16px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+#music-button:hover {
+    background-color: #005bb5;
+    transform: scale(1.05);
+}
+
+#music-button:active {
+    transform: scale(0.95);
+}
+
+/* 經歷區塊樣式 */
+#experience {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.experience-item {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.experience-item img {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+/* 主內容區域 */
+.main-content {
+    margin: 0 150px; /* 留出左右廣告空間 */
+    padding: 20px;
+}
+
+/* 聯絡資訊樣式 */
+#contact ul {
+    list-style-type: none;
+    text-align: center;
+    padding: 0;
+}
+
+#contact ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+#contact ul li a {
+    text-decoration: none;
+    color: #0073e6;
+}
+
+/* 影片區塊樣式 */
+#videos .video-item {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    color: #ffd700;
+}
+
+/* 為了讓內容不被導覽欄遮住 */
+body {
+    margin-top: 50px;
 }
 
 body {
