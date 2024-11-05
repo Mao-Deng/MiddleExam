@@ -42,7 +42,12 @@ body {
     margin-top: 50px;
     font-family: Arial, sans-serif;
     color: #333;
-    background-color: #f4f4f9;
+    background-image: url('image/cycu.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: 0;
+    padding: 0;
 }
 
 h1, h2 {
@@ -182,7 +187,7 @@ section {
 
 /* 主內容區域 */
 .main-content {
-    margin: 0 150px; /* 留出左右廣告空間 */
+    margin: 0 150px;
     padding: 20px;
 }
 
@@ -236,7 +241,7 @@ body {
 body {
     font-family: Arial, sans-serif;
     color: #333;
-    background-color: #f4f4f9;
+    background-color: #acacac;
 }
 
 h1, h2 {
